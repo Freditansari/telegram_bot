@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from app.send_response import send
 import sys
+import json
 
 
 app = Flask(__name__) 
@@ -15,7 +16,7 @@ def receive_commands():
     if request.method=='POST':
         print(request.json)
         sys.stdout.flush()
-        send(request.json.string())
+        send(json.dumps(request.json))
         return 'ok'
     return jsonify(received_commands)
 
