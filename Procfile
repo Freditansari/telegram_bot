@@ -1,1 +1,1 @@
-web: gunicorn wsgi:app
+web: bokeh serve --port $PORT --host https://tele-simplepotato.herokuapp.com/ --address=0.0.0.0 --use-xheaders iex.py
