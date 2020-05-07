@@ -11,7 +11,7 @@ def home_view():
 @app.route('/telegram-commands', methods=['GET','POST'])
 def receive_commands():
     if request.method=='POST':
-        print(request.form)
+        print(request.json)
         sys.stdout.flush()
         return 'ok'
     return jsonify(received_commands)
