@@ -1,1 +1,4 @@
 https://zduey.github.io/snippets/app-deployment-with-heroku/
+
+actual working guide: 
+https://hidenobu-tokuda.com/how-to-build-a-hello-world-web-application-using-flask-and-deploy-it-to-heroku/
