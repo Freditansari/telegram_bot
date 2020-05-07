@@ -1,4 +1,4 @@
-from flask import request
+import requests
 def send(bot_message):
 
     bot_chatID = '559737247'
@@ -7,5 +7,5 @@ def send(bot_message):
 
     # resp = requests.post('https://api.telegram.org/bot{}/sendMessage'.format(token), params)
 
-    response = request.get(send_text)
+    response = requests.get(send_text)
     return response.json()
