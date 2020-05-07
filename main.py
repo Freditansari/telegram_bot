@@ -8,4 +8,4 @@ def home_view():
 
 if __name__ =='__main__':
     app.secret_key='secret1234'
-    app.run(debug=True)
+    app.run()

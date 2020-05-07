@@ -1,1 +1,1 @@
-web: bokeh serve --port $PORT --allow-websocket-origin=tele-simplepotato.herokuapp.com --address=0.0.0.0 --use-xheaders ./app/main.py
+web: gunicorn main:app
