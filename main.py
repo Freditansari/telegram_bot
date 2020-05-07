@@ -15,7 +15,7 @@ def receive_commands():
     if request.method=='POST':
         print(request.json)
         sys.stdout.flush()
-        send(request.json.dumps())
+        send(request.json.string())
         return 'ok'
     return jsonify(received_commands)
 
