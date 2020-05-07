@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import sys
 
 app = Flask(__name__) 
 
@@ -11,6 +12,7 @@ def home_view():
 def receive_commands():
     if request.method=='POST':
         print(request.form)
+        sys.stdout.flush()
         return 'ok'
     return jsonify(received_commands)
 
